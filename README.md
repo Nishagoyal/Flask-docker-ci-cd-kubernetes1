@@ -8,5 +8,5 @@ Flask application has been converted into a docker image and stored in container
 3. Create container registry
 4. Through CI/CD pipeline , add your docker image to the registry
 5. Create an aks cluster 
-6. Attach your aks with your azure registry
+6. Attach your aks with your azure registry.
 
