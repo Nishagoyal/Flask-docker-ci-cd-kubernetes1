@@ -9,7 +9,7 @@ Flask application has been converted into a docker image and stored in container
 4. Through CI/CD pipeline , add your docker image to the registry
 5. Create an aks cluster 
 6. Configure kubectl to connect to your Kubernetes cluster using : az aks get-credentials --resource-group <RG_Name> --name <cluster_Name>
-6. Attach your aks with your azure registry using the command: az aks update -n <cluster_Name> -g <RG_Name> --attach-acr <acrName>
+6. Attach your aks with your azure registry using the command: az aks update -n <cluster_Name> -g <RG_Name> --attach-acr [acrName]
 7. Check nodes using : kubectl get nodes
 8. Run the yaml file which will deploy your docker image using: kubectl apply -f <your file>
 9. To monitor progress: kubectl get service <service name> --watch
